@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  crop-prediction-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: crop-prediction-app
+    container_name: crop-prediction-app
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./static:/app/static
+      - ./templates:/app/templates
+    restart: unless-stopped
