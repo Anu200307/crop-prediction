@@ -26,7 +26,7 @@ A modern web application that uses machine learning to predict the most suitable
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/crop-prediction.git
+git clone https://github.com/Anu200307/crop-prediction.git
 cd crop-prediction
 ```
 
@@ -63,7 +63,7 @@ If you have Docker installed, you can run the application using Docker:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/crop-prediction.git
+git clone https://github.com/Anu200307/crop-prediction.git
 cd crop-prediction
 ```
 
@@ -91,7 +91,7 @@ cd crop-prediction
 3. Access the application at:
 
 ```
-http://localhost:5000/
+http://localhost:8080/
 ```
 
 ## Usage
@@ -139,6 +139,17 @@ The application features a simple wheat field visualization in the hero section 
 - Adaptive styling that changes with light/dark mode
 
 This focused animation keeps the interface clean while providing a visual representation of what the application helps users accomplish.
+
+## Docker Hub Image
+
+A pre-built Docker image is available on Docker Hub:
+
+```bash
+docker pull anubarik/crop-prediction-final:latest
+docker run -p 8080:5000 anubarik/crop-prediction-final:latest
+```
+
+Then access the application at http://localhost:8080/
 
 ## License
 
